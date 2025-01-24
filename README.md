@@ -1,1 +1,270 @@
-# class-grid1
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+            grid-template-rows: 1fr 1fr 1fr 3fr 1fr; /* Adjusting rows for better fit */
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .d1 {
+            background-color: green;
+            grid-row: 1 / 4;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+
+        .d2 {
+            grid-column: 2 / 6;
+            border: 2px solid black;
+        }
+
+        .d3 {
+            grid-column: 2 / 5;
+            border: 2px solid black;
+        }
+
+        .d4 {
+            grid-column: 2 / 3;
+            border: 2px solid black;
+        }
+
+        .d5 {
+            grid-column: 3 / 4;
+            border: 2px solid black;
+        }
+
+        .d6 {
+            grid-column: 4 / 5;
+            border: 2px solid black;
+        }
+
+        .d7 {
+            grid-column: 5 / 6;
+            border: 2px solid black;
+        }
+
+        .d8 {
+            grid-column: 6 / 7;
+            border: 2px solid black;
+        }
+
+        .d9 {
+            grid-column: 7 / 8;
+            border: 2px solid black;
+        }
+
+        .d10 {
+            background-color: green;
+            grid-row: 4 / 7;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+
+        .d11 {
+            background-color: blueviolet;
+            grid-column: 2 / 8;
+            grid-row: 4 / 7;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+
+        .d12 {
+            grid-column: 2 / 8;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1">Logo</div>
+        <div class="d2">2</div>
+        <div class="d3">21</div>
+        <div class="d4">3</div>
+        <div class="d5">4</div>
+        <div class="d6">5</div>
+        <div class="d7">6</div>
+        <div class="d8">7</div>
+        <div class="d9">8</div>
+        <div class="d10">Navigation</div>
+        <div class="d11">Content</div>
+        <div class="d12">Footer</div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work with Animations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+            grid-template-rows: 1fr 1fr 1fr 3fr 1fr; /* Adjusting rows for better fit */
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main > div {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .d1 {
+            background-color: green;
+            grid-row: 1 / 4;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+            animation-delay: 0.2s;
+        }
+
+        .d2 {
+            grid-column: 2 / 6;
+            border: 2px solid black;
+            animation-delay: 0.4s;
+        }
+
+        .d3 {
+            grid-column: 2 / 5;
+            border: 2px solid black;
+            animation-delay: 0.6s;
+        }
+
+        .d4 {
+            grid-column: 2 / 3;
+            border: 2px solid black;
+            animation-delay: 0.8s;
+        }
+
+        .d5 {
+            grid-column: 3 / 4;
+            border: 2px solid black;
+            animation-delay: 1s;
+        }
+
+        .d6 {
+            grid-column: 4 / 5;
+            border: 2px solid black;
+            animation-delay: 1.2s;
+        }
+
+        .d7 {
+            grid-column: 5 / 6;
+            border: 2px solid black;
+            animation-delay: 1.4s;
+        }
+
+        .d8 {
+            grid-column: 6 / 7;
+            border: 2px solid black;
+            animation-delay: 1.6s;
+        }
+
+        .d9 {
+            grid-column: 7 / 8;
+            border: 2px solid black;
+            animation-delay: 1.8s;
+        }
+
+        .d10 {
+            background-color: green;
+            grid-row: 4 / 7;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+            animation-delay: 2s;
+        }
+
+        .d11 {
+            background-color: blueviolet;
+            grid-column: 2 / 8;
+            grid-row: 4 / 7;
+            text-align: center;
+            align-content: center;
+            border: 2px solid black;
+            animation-delay: 2.2s;
+        }
+
+        .d12 {
+            grid-column: 2 / 8;
+            border: 2px solid black;
+            border-radius: 10px;
+            animation-delay: 2.4s;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1">Logo</div>
+        <div class="d2">2</div>
+        <div class="d3">21</div>
+        <div class="d4">3</div>
+        <div class="d5">4</div>
+        <div class="d6">5</div>
+        <div class="d7">6</div>
+        <div class="d8">7</div>
+        <div class="d9">8</div>
+        <div class="d10">Navigation</div>
+        <div class="d11">Content</div>
+        <div class="d12">Footer</div>
+    </div>
+</body>
+</html>
